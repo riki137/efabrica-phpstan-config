@@ -7,6 +7,9 @@ parameters:
                 - '#Unknown PHPDoc tag: @phpstan-latte-component#'
                 - '#Unknown PHPDoc tag: @phpstan-latte-ignore#'
             reportUnmatched: false
+        -
+            messages:
+                - '#magic number as a function argument#'
 
     customRulesetUsed: true
     inferPrivatePropertyTypeFromConstructor: true
