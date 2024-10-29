@@ -1,8 +1,6 @@
 parameters:
     customRulesetUsed: true
     inferPrivatePropertyTypeFromConstructor: true
-    checkMissingIterableValueType: false
-    checkGenericClassInNonGenericObjectType: false
     checkUninitializedProperties: true
     strictRules:
         # turn off strict rules
@@ -19,6 +17,14 @@ parameters:
     reportMaybesInMethodSignatures: false
     reportStaticMethodSignatures: false
     reportMaybesInPropertyPhpDocTypes: false
+
+    ignoreErrors:
+        -
+            identifier: missingType.iterableValue
+            reportUnmatched: false
+        -
+            identifier: missingType.generics
+            reportUnmatched: false
 
     disallowedFunctionCalls:
         -

@@ -8,13 +8,17 @@ parameters:
                 - '#Unknown PHPDoc tag: @phpstan-latte-ignore#'
             reportUnmatched: false
         -
+            identifier: missingType.iterableValue
+            reportUnmatched: false
+        -
+            identifier: missingType.generics
+            reportUnmatched: false
+        -
             messages:
                 - '#magic number as a function argument#'
 
     customRulesetUsed: true
     inferPrivatePropertyTypeFromConstructor: true
-    checkMissingIterableValueType: false
-    checkGenericClassInNonGenericObjectType: false
     checkUninitializedProperties: true
     strictRules:
         # turn off strict rules

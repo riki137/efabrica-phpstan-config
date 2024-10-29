@@ -1,6 +1,4 @@
 parameters:
-    checkMissingIterableValueType: true
-    checkGenericClassInNonGenericObjectType: true
     strictRules:
         allRules: true
     polluteScopeWithLoopInitialAssignments: false
